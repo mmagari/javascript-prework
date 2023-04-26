@@ -68,11 +68,9 @@ if (argButtonName == buttonPlay) {
 
 
 //funckja porównująca ruchy, z użyciem przycisków
-var argButtonName, argCompMove, argCompMove;
-
 function buttonClicked(argButtonName){
     console.log(argButtonName + ' został kliknięty');
-    argCompMove = draw();
+    let argCompMove = draw();
     if (argButtonName == argCompMove) {
         printMessage('Twój ruch: ' + argButtonName + ' Ruch komputera to: ' + argCompMove + '<br> Remis');
     }   else if( argButtonName == 'kamień' && argCompMove == 'nożyce'){
@@ -86,13 +84,12 @@ function buttonClicked(argButtonName){
         }
     }
 
+const argButtonRock = document.getElementById('button-rock');
+argButtonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 
-argCompMove = document.getElementById('button-rock');
-argCompMove.addEventListener('click', function(){ buttonClicked('kamień'); });
+const argButtonPaper = document.getElementById('button-paper');
+argButtonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 
-argCompMove = document.getElementById('button-paper');
-argCompMove.addEventListener('click', function(){ buttonClicked('paper'); });
-
-argCompMove = document.getElementById('button-scissors');
-argCompMove.addEventListener('click', function(){ buttonClicked('nożyce'); });
+const argButtonScissors = document.getElementById('button-scissors');
+argButtonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 
