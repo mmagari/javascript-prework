@@ -7,11 +7,13 @@
 </head>
 <body>
 	<div class="container">
-		<div id="buttons"></div>
+		<div id="buttons">
+			<button type="button" onclick="clearMessages()">Nowa gra</button><br><br>
+			<button type="button" id="button-paper" onclick="clearMessages()">papier</button>
+			<button type="button" id="button-rock" onclick="clearMessages()">kamień</button>
+			<button type="button" id="button-scissors" onclick="clearMessages()">nożyce</button>
+		</div>
 		<div id="messages">
-            <button type="button" id="button-paper">papier</button>
-            <button type="button" id="button-rock">kamień</button>
-            <button type="button" id="button-scissors">nożyce</button>
         </div>
 	</div>
 	<script src="js/functions.js"></script>

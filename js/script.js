@@ -20,15 +20,15 @@ function buttonClicked(argButtonName){
     console.log(argButtonName + ' został kliknięty');
     let argCompMove = draw();
     if (argButtonName == argCompMove) {
-        printMessage('Twój ruch: ' + argButtonName + '<br> Ruch komputera to: ' + argCompMove + '<br> Remis');
+        printMessage('<br>Twój ruch: ' + argButtonName + '<br> Ruch komputera to: ' + argCompMove + '<br> Remis');
     }   else if( argButtonName == 'kamień' && argCompMove == 'nożyce'){
-        printMessage('Twój ruch: ' + argButtonName + '<br> Ruch komputera to: ' + argCompMove + '<br> Gratulacje - Wygrałeś');
+        printMessage('<br>Twój ruch: ' + argButtonName + '<br> Ruch komputera to: ' + argCompMove + '<br> Gratulacje - Wygrałeś');
     }   else if( argButtonName == 'nożyce' && argCompMove == 'papier'){ 
-        printMessage('Twój ruch: ' + argButtonName + '<br> Ruch komputera to: ' + argCompMove + '<br> Gratulacje - Wygrałeś');
+        printMessage('<br>Twój ruch: ' + argButtonName + '<br> Ruch komputera to: ' + argCompMove + '<br> Gratulacje - Wygrałeś');
     }   else if( argButtonName == 'papier' && argCompMove == 'kamień'){   
-        printMessage('Twój ruch: ' + argButtonName + '<br> Ruch komputera to: ' + argCompMove + '<br> Gratulacje - Wygrałeś');
+        printMessage('<br>Twój ruch: ' + argButtonName + '<br> Ruch komputera to: ' + argCompMove + '<br> Gratulacje - Wygrałeś');
     }   else {
-        printMessage('Twój ruch: ' + argButtonName + '<br> Ruch komputera to: ' + argCompMove +' <br> Niestety przegrałeś.');
+        printMessage('<br>Twój ruch: ' + argButtonName + '<br> Ruch komputera to: ' + argCompMove +' <br> Niestety przegrałeś.');
         }
     }
 
